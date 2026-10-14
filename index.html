@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7c2d12">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Tougly">
+  <title>Tougly</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-title" id="titulo">Tougly</div>
+    <button class="sync" id="sync" type="button" aria-label="Estado de guardado"></button>
+  </header>
+
+  <main id="vista"></main>
+
+  <button class="fab" id="fab" type="button" aria-label="Enviar hojas">+ Enviar hojas</button>
+
+  <nav class="tabs">
+    <a href="#inicio" data-tab="inicio"><span class="ico">🏠</span>Inicio</a>
+    <a href="#lotes" data-tab="lotes"><span class="ico">📦</span>Lotes</a>
+    <a href="#factura" data-tab="factura"><span class="ico">🧾</span>Factura</a>
+    <a href="#historial" data-tab="historial"><span class="ico">📅</span>Historial</a>
+    <a href="#ajustes" data-tab="ajustes"><span class="ico">⚙️</span>Ajustes</a>
+  </nav>
+
+  <dialog id="dialogo"><form method="dialog" id="dialogo-form"></form></dialog>
+  <div id="aviso" class="aviso" role="status"></div>
+
+  <script src="xlsx.mini.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
